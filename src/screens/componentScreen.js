@@ -7,7 +7,6 @@ const ComponentScreen = () => {
     <View>
       <Text style={styles.styleText}> This is newlly created component</Text>
       <Text style={styles.styleText}> This is second created component</Text>
-      {greeting}
       <Text>{greeting}</Text>
     </View>
   );
