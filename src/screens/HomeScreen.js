@@ -7,12 +7,19 @@ const HomeScreen = ({ navigation }) => {
     <View>
       <Text style={styles.text}>Hello Tashfeen</Text>
       <Button
+        style={styles.margin}
         title="Go to Component Screen"
         onPress={() => navigation.navigate("ComponentScreen")}
       />
       <Button
+        style={styles.margin}
         onPress={() => navigation.navigate("ListScreen")}
         title="Go To List Component"
+      />
+      <Button
+        style={styles.margin}
+        onPress={() => navigation.navigate("ImageScreen")}
+        title="Go To Image Screen"
       />
     </View>
   );
@@ -21,6 +28,9 @@ const HomeScreen = ({ navigation }) => {
 const styles = StyleSheet.create({
   text: {
     fontSize: 30,
+  },
+  margin: {
+    marginTop: 30,
   },
 });
 
